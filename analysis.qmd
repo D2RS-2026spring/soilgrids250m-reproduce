@@ -1,0 +1,13 @@
+---
+title: "SoilGrids250m 可重复性复现分析"
+format: html
+---
+
+# 项目简介
+复现 Hengl et al. (2017) SoilGrids250m 全球土壤有机碳预测结果。
+
+## 1. 加载包与代码
+```{r}
+library(ggplot2)
+library(dplyr)
+library(tidyr)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>SoilGrids250m 复现报告</title>
+<style>
+body{font-family:Arial;margin:40px;line-height:1.6}
+img{max-width:90%;height:auto;margin:10px 0;border:1px solid #ddd}
+h1,h2{color:#2c3e50}
+</style>
+</head>
+
+<body>
+<h1>SoilGrids250m 全球土壤属性可重复性复现</h1>
+<h2>项目简介</h2>
+<p>本项目复现 Hengl et al. (2017) 论文核心图表，包括土壤有机碳剖面、全球空间分布、实测预测对比、纬度分异特征等。</p>
+
+<h2>1. 土壤有机碳深度剖面（论文图2）</h2>
+<img src="analysis_files/soc_depth_profile.png">
+
+<h2>2. 实测值 vs 预测值（论文图8）</h2>
+<img src="analysis_files/measured_vs_predicted.png">
+
+<h2>3. 全球土壤有机碳分布</h2>
+<img src="analysis_files/global_soc_map.png">
+<img src="analysis_files/soc_global_map.png">
+
+<h2>4. 纬度带 SOC 分布差异</h2>
+<img src="analysis_files/soc_latitude_boxplot.png">
+
+<h2>5. 模型精度表</h2>
+<p>数据文件：<a href="data/SoilGrids_accuracy_table.csv">SoilGrids_accuracy_table.csv</a></p>
+
+<h2>可重复性说明</h2>
+<p>使用 R 语言复现，renv 锁定环境，所有图表与表格均可一键重现。</p>
+</body>
+</html>
