@@ -35,6 +35,7 @@ soilgrids250m‑reproduce/
 ```r
 install.packages("renv", repos = "https://cran.r-project.org")
 renv::restore(lockfile = "renv.lock")
+```
 ### 步骤3：运行主代码
 ```r
 source("reproduce_soilgrids250m.R", encoding = "UTF‑8")
