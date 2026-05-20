@@ -32,10 +32,14 @@ soilgrids250m‑reproduce/
 ### 步骤1：获取项目文件，保持目录结构不变
 
 ### 步骤2：一键恢复环境
-```r
+# 安装环境管理包
 install.packages("renv", repos = "https://cran.r-project.org")
-renv::restore(lockfile = "renv.lock")
-```
+# 初始化项目环境（无lock文件也可正常配置）
+renv::init()
+# 安装绘图、数据分析依赖包
+install.packages(c("ggplot2", "dplyr", "tidyr"))
+# 安装报告渲染工具
+install.packages("quarto")
 ### 步骤3：运行主代码
 ```r
 source("reproduce_soilgrids250m.R", encoding = "UTF‑8")
