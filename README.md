@@ -40,7 +40,7 @@ install.packages("quarto")
 ```
 ### 步骤3：运行主代码
 ```r
-source("reproduce_soilgrids250m.R", encoding = "UTF‑8")
+source("reproduce_soilgrids250m.R", encoding = "UTF-8")
 ```
 ### 步骤 4：Quarto 生成完整报告
 ```r
