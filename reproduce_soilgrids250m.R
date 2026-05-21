@@ -67,7 +67,7 @@ accuracy <- data.frame(
   R2         = c(69.2, 84.5, 79.1, 80.3, 73.8, 76.5, 68.1),
   RMSE       = c(3.81, 0.48, 12.8, 9.6, 9.4, 0.16, 10.2)
 )
-write.csv(accuracy, "data/SoilGrids_accuracy_table.csv", row.names = FALSE, fileEncoding = "UTF‑8")
+write.csv(accuracy, "data/SoilGrids_accuracy_table.csv", row.names = FALSE, fileEncoding = "UTF-8")
 
 message("======================================")
 message("✅ 全部分析结果生成完成！")
