@@ -33,7 +33,7 @@ soilgrids250m‑reproduce/
 
 ### 步骤2：一键恢复环境
 ```r
-install.packages("renv", repos = "https://cran.r-project.org")
+install.packages("renv", repos = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")
 renv::init()
 install.packages(c("ggplot2", "dplyr", "tidyr"))
 install.packages("quarto")
